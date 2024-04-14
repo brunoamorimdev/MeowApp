@@ -17,6 +17,10 @@
 		468009282BCB580600E2C9DF /* MeowAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468009272BCB580600E2C9DF /* MeowAppTests.m */; };
 		468009322BCB580600E2C9DF /* MeowAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468009312BCB580600E2C9DF /* MeowAppUITests.m */; };
 		468009342BCB580600E2C9DF /* MeowAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 468009332BCB580600E2C9DF /* MeowAppUITestsLaunchTests.m */; };
+		468009422BCB6DB700E2C9DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468009412BCB6DB700E2C9DF /* AudioToolbox.framework */; };
+		468009442BCB72BD00E2C9DF /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 468009432BCB72BD00E2C9DF /* Cat.wav */; };
+		468009452BCB72BD00E2C9DF /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 468009432BCB72BD00E2C9DF /* Cat.wav */; };
+		468009462BCB72BD00E2C9DF /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 468009432BCB72BD00E2C9DF /* Cat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,8 @@
 		4680092D2BCB580600E2C9DF /* MeowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		468009312BCB580600E2C9DF /* MeowAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeowAppUITests.m; sourceTree = "<group>"; };
 		468009332BCB580600E2C9DF /* MeowAppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeowAppUITestsLaunchTests.m; sourceTree = "<group>"; };
+		468009412BCB6DB700E2C9DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		468009432BCB72BD00E2C9DF /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cat.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468009422BCB6DB700E2C9DF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,7 @@
 				468009262BCB580600E2C9DF /* MeowAppTests */,
 				468009302BCB580600E2C9DF /* MeowAppUITests */,
 				468009092BCB580300E2C9DF /* Products */,
+				468009402BCB6DB700E2C9DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +123,7 @@
 				468009192BCB580600E2C9DF /* LaunchScreen.storyboard */,
 				4680091C2BCB580600E2C9DF /* Info.plist */,
 				4680091D2BCB580600E2C9DF /* main.m */,
+				468009432BCB72BD00E2C9DF /* Cat.wav */,
 			);
 			path = MeowApp;
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 				468009332BCB580600E2C9DF /* MeowAppUITestsLaunchTests.m */,
 			);
 			path = MeowAppUITests;
+			sourceTree = "<group>";
+		};
+		468009402BCB6DB700E2C9DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				468009412BCB6DB700E2C9DF /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +259,7 @@
 				4680091B2BCB580600E2C9DF /* LaunchScreen.storyboard in Resources */,
 				468009182BCB580600E2C9DF /* Assets.xcassets in Resources */,
 				468009162BCB580300E2C9DF /* Main.storyboard in Resources */,
+				468009442BCB72BD00E2C9DF /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468009452BCB72BD00E2C9DF /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468009462BCB72BD00E2C9DF /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +474,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +503,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
